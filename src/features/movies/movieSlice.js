@@ -6,21 +6,21 @@ export const fetchAsyncMovies = createAsyncThunk("movies/fetchAsyncMovies",
  async (term) => {
 	const response = await movieApi
 			.get(`?apikey=${APIKey}&s=${term}&type=movie`)
-			return  response.data;
+			return response.data;
 });
 
 export const fetchAsyncShows = createAsyncThunk("movies/fetchAsyncShows",
  async (term) => {
 	const response = await movieApi
 			.get(`?apikey=${APIKey}&s=${term}&type=series`)
-			return  response.data;
+			return response.data;
 });
 
 export const fetchAsyncMovieOrShowDetail = createAsyncThunk("movies/fetchAsyncMovieOrShowDetail",
  async (id) => {
 	const response = await movieApi
 			.get(`?apikey=${APIKey}&i=${id}&Plot=full`)
-			return  response.data;
+			return response.data;
 });
 
 const initialState = {
