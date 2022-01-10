@@ -9,7 +9,7 @@
 	justify-content: space-between;
 }
 
-.logo {
+.logo a {
 	color: $font-primary;
 	font-size: 20px;
 	font-weight: 600;
@@ -35,7 +35,7 @@ form {
 		padding: 0px 8px;
 		font-size: 20px;
 		cursor: pointer;
-		height: 30px;
+		height: 38px;
 	}
 }
 
@@ -46,3 +46,4 @@ input {
 	height: 38px;
 	outline: none;
 }
+
